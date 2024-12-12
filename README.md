@@ -30,14 +30,14 @@ systemctl enable --now 4ds3
 ### Adding a new job
 ```
 # This will return the job ID.
-$ client.py add -p 5 -c "sleep 100"
+$ python3 client.py add -p 5 -c "sleep 100"
 9ebcae3fa8
 ```
 ### Listing jobs
 ```
 # Will return jobs sorted in ascending order by priority (in both 'running' and 'queued' seperately)
 
-$ client.py status
+$ python3 client.py status
 {
     "running": {
         "9ebcae3fa8": {
@@ -60,12 +60,12 @@ $ client.py status
 
 ### Deleting a running/queued job
 ```
-$ client.py rm 9ebcae3fa8
+$ python3 client.py rm 9ebcae3fa8
 deleted: 9ebcae3fa8
 ...
 
 # Now check to make sure its gone.
-$ client.py status
+$ python3 client.py status
 {
     "queued": {
         "4b2c221f33": {
