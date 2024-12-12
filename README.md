@@ -3,6 +3,9 @@ Part 1 application (code) showcased here.
 
 Explanation with design specifics answered in questions 1 & 2 in portfolio document.
 
+## Requirements
+- Python 3.10 or higher.
+- Any/all dependencies in `requirements.txt`.
 
 ## Installation
 ```
