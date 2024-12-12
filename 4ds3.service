@@ -1,0 +1,12 @@
+[Unit]
+Description=Priority-based task spooler
+
+[Service]
+Environment="PATH=/usr/bin:/usr/sbin:/usr/local/sbin:/usr/local/bin"
+Type=simple
+ExecStart=/opt/4ds3_final_portfolio/server.py
+KillSignal=SIGINT
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
